@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="fsipro"
+  id="myeclipse.1373878291403"
+  context-root="/fsipro"
+  j2ee-spec="5.0"
+  archive="fsipro.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
