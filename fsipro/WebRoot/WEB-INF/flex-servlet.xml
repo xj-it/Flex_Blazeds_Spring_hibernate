@@ -33,6 +33,7 @@
 		<flex:message-service
 			default-channels="my-amf" />
 	</flex:message-broker>
+	<flex:message-destination id="simple-feed"  channels="my-streaming-amf,my-polling-amf" allow-subtopics="true" subtopic-separator="."/>
 	 <bean id="viewResolver" class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
  		<property name="mediaTypes">
 			<map>
@@ -45,5 +46,9 @@
 			</list>
 		</property>
  	</bean>
-
+<bean id="template" class="org.springframework.flex.messaging.MessageTemplate" />
+<bean id="pushService" class="com.fsipro.flex.services.PushService" init-method="start">
+	<constructor-arg ref="template" />
+		<flex:remoting-destination />
+</bean>
 </beans>

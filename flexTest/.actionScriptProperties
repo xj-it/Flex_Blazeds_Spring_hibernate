@@ -15,6 +15,7 @@
   </compiler>
   <applications>
     <application path="flexTest.mxml"/>
+    <application path="flexPush.mxml"/>
   </applications>
   <modules/>
   <buildCSSFiles/>
